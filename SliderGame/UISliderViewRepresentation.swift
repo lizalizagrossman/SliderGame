@@ -10,7 +10,7 @@ import SwiftUI
 struct UISliderViewRepresentation: UIViewRepresentable {
     
     @Binding var value: Float
-    @State var alpha: CGFloat = 1.0
+    @Binding var alpha: CGFloat
     
     
     func makeUIView(context: Context) -> UISlider {
@@ -51,14 +51,14 @@ extension UISliderViewRepresentation {
         
         @objc func sliderMoved(_ sender: UISlider) {
             value = (sender.value).rounded()
-            alpha = CGFloat(GameRules().computeScore(currentValue: value) / 100)
+            alpha = (sender.alpha)
         }
     }
 }
 
 struct UISliderViewRepresentation_Previews: PreviewProvider {
     static var previews: some View {
-        UISliderViewRepresentation(value: .constant(10), alpha: 1.0)
+        UISliderViewRepresentation(value: .constant(10), alpha: .constant(1.0))
     }
 }
 

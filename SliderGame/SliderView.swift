@@ -15,7 +15,7 @@ struct SliderView: View {
         VStack {
             HStack {
                 Text("0")
-                UISliderViewRepresentation(value: $value)
+                UISliderViewRepresentation(value: $value, alpha: $alpha)
                 Text(value.formatted())
             }
             .padding()

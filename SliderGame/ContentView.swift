@@ -11,12 +11,12 @@ struct ContentView: View {
     
     @State var value: Float = 50
     @State private var showingAlert = false
-    @State var score = GameRules().score
-    @State var targetValue = Int.random(in: 0...100)
-
+    @StateObject private var gameRules = GameRules()
+    
+    
     var body: some View {
         VStack {
-            Text("Подвиньте слайдер как можно ближе к: \(targetValue)")
+            Text("Подвиньте слайдер как можно ближе к: \(gameRules.targetValue)")
             SliderView(value: $value)
             VStack(spacing: 20) {
                 ButtonView(title: "Проверь меня",
@@ -25,11 +25,11 @@ struct ContentView: View {
                     .alert(isPresented: $showingAlert) {
                         Alert(
                             title: Text("Your score"),
-                            message: Text(score.formatted()),
+                            message: Text((gameRules.computeScore(currentValue: value)).formatted()),
                             dismissButton: .default(Text("Got it!"))
                         )
                             }
-                ButtonView(title: "Начать заново", action: {} )
+                ButtonView(title: "Начать заново", action: gameRules.restartGame )
             }
         }
         .padding()
