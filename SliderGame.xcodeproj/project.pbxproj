@@ -11,6 +11,10 @@
 		B343DDAC2A0162BF00F22530 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343DDAB2A0162BF00F22530 /* ContentView.swift */; };
 		B343DDAE2A0162C100F22530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B343DDAD2A0162C100F22530 /* Assets.xcassets */; };
 		B343DDB12A0162C100F22530 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B343DDB02A0162C100F22530 /* Preview Assets.xcassets */; };
+		B343DDB82A0163C700F22530 /* UISliderViewRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343DDB72A0163C700F22530 /* UISliderViewRepresentation.swift */; };
+		B343DDBA2A01674800F22530 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343DDB92A01674800F22530 /* SliderView.swift */; };
+		B343DDBC2A0169C500F22530 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343DDBB2A0169C500F22530 /* ButtonView.swift */; };
+		B343DDC02A0178EA00F22530 /* GameRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343DDBF2A0178EA00F22530 /* GameRules.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		B343DDAB2A0162BF00F22530 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B343DDAD2A0162C100F22530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B343DDB02A0162C100F22530 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B343DDB72A0163C700F22530 /* UISliderViewRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderViewRepresentation.swift; sourceTree = "<group>"; };
+		B343DDB92A01674800F22530 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		B343DDBB2A0169C500F22530 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		B343DDBF2A0178EA00F22530 /* GameRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRules.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				B343DDA92A0162BF00F22530 /* SliderGameApp.swift */,
 				B343DDAB2A0162BF00F22530 /* ContentView.swift */,
+				B343DDB72A0163C700F22530 /* UISliderViewRepresentation.swift */,
+				B343DDB92A01674800F22530 /* SliderView.swift */,
+				B343DDBF2A0178EA00F22530 /* GameRules.swift */,
+				B343DDBB2A0169C500F22530 /* ButtonView.swift */,
 				B343DDAD2A0162C100F22530 /* Assets.xcassets */,
 				B343DDAF2A0162C100F22530 /* Preview Content */,
 			);
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B343DDAC2A0162BF00F22530 /* ContentView.swift in Sources */,
+				B343DDBA2A01674800F22530 /* SliderView.swift in Sources */,
+				B343DDBC2A0169C500F22530 /* ButtonView.swift in Sources */,
 				B343DDAA2A0162BF00F22530 /* SliderGameApp.swift in Sources */,
+				B343DDB82A0163C700F22530 /* UISliderViewRepresentation.swift in Sources */,
+				B343DDC02A0178EA00F22530 /* GameRules.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
